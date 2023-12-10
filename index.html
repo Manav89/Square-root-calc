@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="close">
+            <h1>Square Root Calculator</h1>
+
+            <label for="sr">Enter a number : </label>
+            <input type="number" id="sr">
+            <br>
+            <br>
+
+            <button onclick="srt()">Calculate Square Root</button>
+
+            <h3 id="ans"></h3>
+        </div>
+    </div>
+
+
+    <script>
+        const srt = () => {
+            var i = parseFloat(document.getElementById("sr").value);
+
+            var j = Math.sqrt(i);
+
+            document.getElementById("ans").innerHTML = "The square root of "+i+" is : " +j;
+        }
+    </script>
+</body>
+</html>
